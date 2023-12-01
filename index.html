@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./math.css">
+  <title>calculater</title>
+</head>
+
+<body>
+<div class="dark">
+  <div class="corner"></div>
+  
+  <svg onclick="dark()" class="sun" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="19.9999" cy="20" r="6.66667" fill="#E5EBF2"/>
+    <path d="M20 8.33333V5" stroke="#E5EBF2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M20 35V31.6666" stroke="#E5EBF2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M28.2497 11.75L30.6067 9.39294" stroke="#E5EBF2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M9.39347 30.6074L11.7505 28.2504" stroke="#E5EBF2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M31.6667 20L35 20" stroke="#E5EBF2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M4.99992 20L8.33325 20" stroke="#E5EBF2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M28.2497 28.25L30.6067 30.6071" stroke="#E5EBF2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M9.39347 9.39261L11.7505 11.7496" stroke="#E5EBF2" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+
+    <svg onclick="light()" class="moon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.77324 0.156529C10.1982 -0.482545 11.4327 0.961088 10.9869 2.21453C9.47432 6.46765 10.4037 11.2982 13.5433 14.4393C16.6989 17.5964 21.5574 18.5243 25.8208 16.9833C27.0613 16.5349 28.4646 17.7583 27.8513 19.1505C27.8331 19.1917 27.8148 19.2327 27.7964 19.2738C26.7048 21.6963 24.9587 23.9746 22.6997 25.5021C20.2918 27.1302 17.4523 28 14.5462 28H14.5448C11.1654 27.9963 7.89245 26.8166 5.28703 24.6632C2.68159 22.5098 0.905937 19.5166 0.264595 16.1967C-0.376746 12.8769 0.156198 9.43726 1.77203 6.46749C3.30383 3.65215 5.87964 1.46432 8.73134 0.175383L8.77324 0.156529Z" fill="#AFB2B9"/>
+      </svg>
+      
+      
+    
+    
+    
+  <div class="cont">
+    <div class="math">
+      
+    </div>
+    <div class="result">
+    
+    </div>
+  </div>
+  
+ 
+    
+  
+  <div class="first">
+    <button id="delete" class="grey"><i class="fa-solid fa-delete-left"></i></button>
+    <button class="grey" id="clear">AC</button>
+    
+    <button id="posNegBtn" class="grey">-/+</button>
+    <button id="/" class="orange">/</button>
+  </div>
+  <div class="sec">
+    <button class="black">7</button>
+    <button class="black">8</button>
+    <button class="black">9</button>
+    <button id="x" class="orange">x</button>
+  </div>
+  <div class="third">
+    <button class="black">4</button>
+    <button class="black">5</button>
+    <button class="black">6</button>
+    <button id="-" class="orange">-</button>
+  </div>
+  <div class="four">
+    <button class="black">1</button>
+    <button class="black">2</button>
+    <button class="black">3</button>
+    <button id="+" class="orange">+</button>
+  </div>
+  <div class="five">
+    
+    <button class="big black">0</button>
+    <button class="black">.</button>
+    <button class="equal">=</button>
+  </div>
+  </div>
+
+  <script src="./math.js"></script>
+</body>
+</html>

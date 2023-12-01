@@ -1,0 +1,213 @@
+body{
+  
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #BDC4D3;
+}
+.dark{
+ display: flex;
+ position: relative;
+width: 353px;
+height: 720px;
+margin-top: 7vh;
+background: radial-gradient(113.98% 113.98% at -9.47% -13.98%, #383F4C 0%, #20202D 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+transition: all .5s ease;
+}
+.corner{
+  position: absolute;
+width: 72px;
+height: 56px;
+left: 19px;
+top: 23px;
+
+background: #586271;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+border-radius: 120px 150px 150px 0px;
+}
+
+
+.lightcorner{
+  background: #D7DBE3;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+border-radius: 100px 150px 150px 0px;
+transition: all .5s ease;
+}
+.lightback{
+/* Auto layout */
+background: radial-gradient(113.98% 113.98% at -9.47% -13.98%, #FFFFFF 0%, #D8DDE8 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+transition: all .5s ease;
+
+}
+.lightmoon{
+  background: radial-gradient(76.87% 76.87% at 15% 15%, #C9C9C9 19.79%, #E4ECF9 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 4px #CCCDCE, inset 4px 4px 3px #E0E6F1;
+border-radius: 25px;
+color: #414B5D;
+}
+.moon{
+  position: absolute;
+left: 11.9%;
+right: 80.0%;
+top: 5%;
+bottom: 91.11%;
+cursor: pointer;
+}
+.sun{
+  transition: all .2s ease-in-out;
+  position: absolute;
+  
+  left: 32px;
+  top: 31px;
+  color: rgba(78, 28, 28, 0.94);
+  
+cursor: pointer;
+  }
+  .moon{
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+.first{
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  left: 15px;
+  top: 277px;
+}
+.grey{
+ border: none;
+padding: 10px;
+width: 74px;
+height: 73px;
+background: radial-gradient(76.87% 76.87% at 15% 15%, #425160 0%, #606A7E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #4D5666, inset 4px 4px 3px #60697A;
+border-radius: 25px;
+transition: all .5s ease;
+
+  }
+  button:active{
+    transform: scale(1.07);
+  }
+  button{
+    transition: all .2s ease;
+    color: rgba(235, 235, 235, 0.89);
+    font-size: x-large;
+    text-align: center;
+    cursor: pointer;
+  }
+  .orange,.equal{
+    width: 74px;
+height: 73px;
+    background: radial-gradient(76.87% 76.87% at 15% 15%, #B45D00 10.94%, #E58720 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #945A1C, inset 4px 4px 3px #D88520;
+border-radius: 25px;
+border: none;
+  }
+  .sec{
+    display: flex;
+  position: absolute;
+  gap: 10px;
+  left: 15px;
+top: 358px; 
+  }
+  .black{
+    width: 74px;
+    height: 73px;
+    background: radial-gradient(76.87% 76.87% at 15% 15%, #2F3643 26.56%, #3E4655 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #31363F, inset 4px 4px 3px #383F4C;
+border-radius: 25px;
+border: none;
+transition: all .5s ease;
+  }
+.third{
+  display: flex;
+  position: absolute;
+  gap: 10px;
+ 
+left: 15px;
+ top: 439px;
+}
+.four{
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  left: 15px;
+  top: 521px;
+}
+.five{
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  left: 15px;
+top: 602px;
+}
+.big{
+  background: radial-gradient(76.87% 76.87% at 15% 15%, #2F3643 26.56%, #3E4655 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #31363F, inset 4px 4px 3px #383F4C;
+border-radius: 25px;
+width: 157px;
+height: 73px;
+border: none;
+}
+.result{
+  position: absolute;
+width: 310px;
+max-width: 290;
+height: 67px;
+left: 0px;
+top: 173px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 58px;
+line-height: 67px;
+
+
+display: flex;
+align-items: flex-end;
+text-align: end;
+display: inline;  
+
+color: rgba(255, 255, 255, 0.94);
+
+}
+.math{
+  position: absolute;
+width: 300px;
+height: 23px;
+left: 0px;
+top: 120px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+
+ 
+display: flex;
+align-items: flex-end;
+text-align: end;
+display: inline; 
+
+color: #6F7687;
+}
+.fa-delete-left{
+  transform: rotatey(180deg);
+  
+}
+.math,.result{
+  text-align: end;
+  overflow: hidden;
+}
+.cont{
+  display: grid;
+}
