@@ -17,8 +17,6 @@ let up = document.querySelectorAll('.grey')
 
 
 
-
-
 let doagain =true
 
 class calculate {
@@ -45,7 +43,7 @@ class calculate {
   again(doagain){
     if(doagain == false){
     btns.forEach(btn=>{
-     
+      console.log(this.prev.innerText)
       btn.addEventListener('click', ()=>{
         
         
@@ -59,7 +57,7 @@ class calculate {
           this.curr.innerText=btn.innerText
           this.prev.innerText=''
           doagain = true
-          console.log(doagain)
+       
           
           return
           
@@ -83,7 +81,14 @@ class calculate {
         break;
     
       case '-':
-        compute = Number(this.prev.innerText.replace(this.opreation,"")) -Number( this.curr.innerText )
+        //allow for -3-3 to happen 
+        let subPrev
+         if (this.prev.innerText.split('-').indexOf('')==1) {
+           subPrev= this.prev.innerText.split('-')[0]
+        }else{
+          subPrev= -(this.prev.innerText.split('-')[1])
+        }
+        compute = Number(subPrev) -Number( this.curr.innerText )
         break;
 
       case 'x':
