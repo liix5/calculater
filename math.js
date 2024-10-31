@@ -252,6 +252,7 @@ transition: all .2s ease-in-out;
 
 `;
 nums.forEach(num => {
+  
   num.style.cssText = `
   
   background: radial-gradient(76.87% 76.87% at 15% 15%, #2F3643 26.56%, #3E4655 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
