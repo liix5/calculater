@@ -15,7 +15,7 @@ background: #BDC4D3;
  position: relative;
 width: 353px;
 height: 720px;
-margin-top: 5vh;
+margin-top: 9vh;
 background: radial-gradient(113.98% 113.98% at -9.47% -13.98%, #383F4C 0%, #20202D 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 border-radius: 50px;
