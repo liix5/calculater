@@ -1,219 +1,253 @@
-*{
-  touch-action: manipulation
+* {
+  touch-action: manipulation;
 }
-body{
-  
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-background: #BDC4D3;
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #bdc4d3;
 }
-.dark{
- display: flex;
- position: relative;
-width: 353px;
-height: 720px;
-margin-top: 9vh;
-background: radial-gradient(113.98% 113.98% at -9.47% -13.98%, #383F4C 0%, #20202D 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-border-radius: 50px;
-transition: all .5s ease;
+.dark {
+  display: flex;
+  position: relative;
+  width: 353px;
+  height: 720px;
+  margin-top: 5vh;
+  background: radial-gradient(
+      113.98% 113.98% at -9.47% -13.98%,
+      #383f4c 0%,
+      #20202d 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  transition: all 0.5s ease;
 }
-.corner{
+.corner {
   position: absolute;
-width: 72px;
-height: 56px;
-left: 19px;
-top: 23px;
+  width: 72px;
+  height: 56px;
+  left: 19px;
+  top: 23px;
 
-background: #586271;
-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-border-radius: 120px 150px 150px 0px;
+  background: #586271;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 120px 150px 150px 0px;
 }
 
-
-.lightcorner{
-  background: #D7DBE3;
-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-border-radius: 100px 150px 150px 0px;
-transition: all .5s ease;
+.lightcorner {
+  background: #d7dbe3;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 100px 150px 150px 0px;
+  transition: all 0.5s ease;
 }
-.lightback{
-/* Auto layout */
-background: radial-gradient(113.98% 113.98% at -9.47% -13.98%, #FFFFFF 0%, #D8DDE8 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-border-radius: 50px;
-transition: all .5s ease;
-
+.lightback {
+  /* Auto layout */
+  background: radial-gradient(
+      113.98% 113.98% at -9.47% -13.98%,
+      #ffffff 0%,
+      #d8dde8 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  transition: all 0.5s ease;
 }
-.lightmoon{
-  background: radial-gradient(76.87% 76.87% at 15% 15%, #C9C9C9 19.79%, #E4ECF9 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 4px #CCCDCE, inset 4px 4px 3px #E0E6F1;
-border-radius: 25px;
-color: #414B5D;
+.lightmoon {
+  background: radial-gradient(
+      76.87% 76.87% at 15% 15%,
+      #c9c9c9 19.79%,
+      #e4ecf9 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 4px #cccdce,
+    inset 4px 4px 3px #e0e6f1;
+  border-radius: 25px;
+  color: #414b5d;
 }
-.moon{
+.moon {
   position: absolute;
-left: 11.9%;
-right: 80.0%;
-top: 5%;
-bottom: 91.11%;
-cursor: pointer;
+  left: 11.9%;
+  right: 80%;
+  top: 5%;
+  bottom: 91.11%;
+  cursor: pointer;
 }
-.sun{
-  transition: all .2s ease-in-out;
+.sun {
+  transition: all 0.2s ease-in-out;
   position: absolute;
-  
+
   left: 32px;
   top: 31px;
   color: rgba(78, 28, 28, 0.94);
-  
-cursor: pointer;
-  }
-  .moon{
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-.first{
+
+  cursor: pointer;
+}
+.moon {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.first {
   display: flex;
   position: absolute;
   gap: 10px;
   left: 15px;
   top: 277px;
 }
-.grey{
- border: none;
-padding: 10px;
-width: 74px;
-height: 73px;
-background: radial-gradient(76.87% 76.87% at 15% 15%, #425160 0%, #606A7E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #4D5666, inset 4px 4px 3px #60697A;
-border-radius: 25px;
-transition: all .5s ease;
+.grey {
+  border: none;
+  padding: 10px;
+  width: 74px;
+  height: 73px;
+  background: radial-gradient(
+      76.87% 76.87% at 15% 15%,
+      #425160 0%,
+      #606a7e 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #4d5666,
+    inset 4px 4px 3px #60697a;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+@media only screen and (min-width: 600px) {
+  button:active {
+    transform: scale(1.07);
+  }
+}
 
-  }
-  @media only screen and (min-width: 600px) {
-    button:active{
-      transform: scale(1.07);
-    }
-  }
-  
-  button{
-    transition: all .2s ease;
-    color: rgba(235, 235, 235, 0.89);
-    font-size: x-large;
-    text-align: center;
-    cursor: pointer;
-  }
-  .orange,.equal{
-    width: 74px;
-height: 73px;
-    background: radial-gradient(76.87% 76.87% at 15% 15%, #B45D00 10.94%, #E58720 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #945A1C, inset 4px 4px 3px #D88520;
-border-radius: 25px;
-border: none;
-  }
-  .sec{
-    display: flex;
-  position: absolute;
-  gap: 10px;
-  left: 15px;
-top: 358px; 
-  }
-  .black{
-    width: 74px;
-    height: 73px;
-    background: radial-gradient(76.87% 76.87% at 15% 15%, #2F3643 26.56%, #3E4655 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #31363F, inset 4px 4px 3px #383F4C;
-border-radius: 25px;
-border: none;
-transition: all .5s ease;
-  }
-.third{
+button {
+  transition: all 0.2s ease;
+  color: rgba(235, 235, 235, 0.89);
+  font-size: x-large;
+  text-align: center;
+  cursor: pointer;
+}
+.orange,
+.equal {
+  width: 74px;
+  height: 73px;
+  background: radial-gradient(
+      76.87% 76.87% at 15% 15%,
+      #b45d00 10.94%,
+      #e58720 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #945a1c,
+    inset 4px 4px 3px #d88520;
+  border-radius: 25px;
+  border: none;
+}
+.sec {
   display: flex;
   position: absolute;
   gap: 10px;
- 
-left: 15px;
- top: 439px;
+  left: 15px;
+  top: 358px;
 }
-.four{
+.black {
+  width: 74px;
+  height: 73px;
+  background: radial-gradient(
+      76.87% 76.87% at 15% 15%,
+      #2f3643 26.56%,
+      #3e4655 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #31363f,
+    inset 4px 4px 3px #383f4c;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.5s ease;
+}
+.third {
+  display: flex;
+  position: absolute;
+  gap: 10px;
+
+  left: 15px;
+  top: 439px;
+}
+.four {
   display: flex;
   position: absolute;
   gap: 10px;
   left: 15px;
   top: 521px;
 }
-.five{
+.five {
   display: flex;
   position: absolute;
   gap: 10px;
   left: 15px;
-top: 602px;
+  top: 602px;
 }
-.big{
-  background: radial-gradient(76.87% 76.87% at 15% 15%, #2F3643 26.56%, #3E4655 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #31363F, inset 4px 4px 3px #383F4C;
-border-radius: 25px;
-width: 157px;
-height: 73px;
-border: none;
+.big {
+  background: radial-gradient(
+      76.87% 76.87% at 15% 15%,
+      #2f3643 26.56%,
+      #3e4655 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25), inset -4px -4px 4px #31363f,
+    inset 4px 4px 3px #383f4c;
+  border-radius: 25px;
+  width: 157px;
+  height: 73px;
+  border: none;
 }
-.result{
+.result {
   position: absolute;
-width: 310px;
-max-width: 290;
-height: 67px;
-left: 0px;
-top: 173px;
+  width: 310px;
+  max-width: 290;
+  height: 67px;
+  left: 0px;
+  top: 173px;
 
-font-family: 'Helvetica';
-font-style: normal;
-font-weight: 300;
-font-size: 58px;
-line-height: 67px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 58px;
+  line-height: 67px;
 
+  display: flex;
+  align-items: flex-end;
+  text-align: end;
+  display: inline;
 
-display: flex;
-align-items: flex-end;
-text-align: end;
-display: inline;  
-
-color: rgba(255, 255, 255, 0.94);
-
+  color: rgba(255, 255, 255, 0.94);
 }
-.math{
+.math {
   position: absolute;
-width: 300px;
-height: 23px;
-left: 0px;
-top: 120px;
+  width: 300px;
+  height: 23px;
+  left: 0px;
+  top: 120px;
 
-font-family: 'Helvetica';
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 23px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
 
- 
-display: flex;
-align-items: flex-end;
-text-align: end;
-display: inline; 
+  display: flex;
+  align-items: flex-end;
+  text-align: end;
+  display: inline;
 
-color: #6F7687;
+  color: #6f7687;
 }
-.fa-delete-left{
+.fa-delete-left {
   transform: rotatey(180deg);
-  
 }
-.math,.result{
+.math,
+.result {
   text-align: end;
   overflow: hidden;
 }
-.cont{
+.cont {
   display: grid;
 }
